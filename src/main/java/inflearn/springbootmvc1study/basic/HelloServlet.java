@@ -12,7 +12,7 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
 
     @Override
-    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("HelloServlet.service");
         System.out.println("request = " + request);
